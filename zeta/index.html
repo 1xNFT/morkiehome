@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G1EYJMH4ZL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G1EYJMH4ZL');
+</script>
+    <title>Morkie is love</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Gigaland - NFT Marketplace Website Template" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+    <!-- CSS Files
+    ================================================== -->
+    <link id="bootstrap" href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />    
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <script src="firebase-init.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <div id="wrapper">
+        <!-- header begin -->
+        <header class="transparent header-light scroll-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img alt="" class="logo" src="images/logo-light.png" />
+                                            <img alt="" width="160.4" height="40.33" class="logo-2" src="images/logo.png" />
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                               
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainmenu begin -->
+                                <ul id="mainmenu">
+                                    <li>
+                                        <a href="index.html">Home<span></span></a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="https://discord.gg/7pXMMDnk">Discord<span></span></a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/morkiexyz">Twitter<span></span></a>
+                                    
+                                    </li>                                    
+                                    <li>
+                                        <a href="#section-intro">Intro<span></span></a>
+                                     
+                                    </li>
+                                    <li>
+                                        <a href="#section-collections">Collections<span></span></a>
+                                        
+                                 
+                                </ul>&nbsp;
+                                <div class="menu_side_area">
+                                    <a  class="btn-main btn-wallet"><i class="icon_wallet_alt"></i><span>zetachain</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <section id="section-hero" aria-label="section" class="no-top no-bottom vh-100" data-bgimage="url(images/background/bg-shape-1.jpg) bottom">
+                <div class="v-center">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="spacer-single"></div>
+                                <h6 class="wow fadeInUp" data-wow-delay=".5s"><span class="text-uppercase id-color-2">morkie </span></h6>
+                                <div class="spacer-10"></div>
+                                <h1 class="wow fadeInUp" data-wow-delay=".75s">we made nft <br><span class="text-lowercase id-color-2" id="typing-text"></span>
+                                    <span id="cursor"></span>...</h1>
+                                <p class="wow fadeInUp lead" data-wow-delay="1s">
+                                Woof! Woof! 🐶  - Mint, Stake, and Play! Mint your paw-some NFTs, stake your treats, and play fetch with digital goodies! 🎾 Join our pack today and let's make tail-wagging memories together! 🐕</p>
+                                <div class="spacer-10"></div>
+                                <a href="https://apps.morkie.xyz/" class="btn-main wow fadeInUp lead" id="explore-btn" data-wow-delay="1.25s">Explore</a>
+                                <div class="mb-sm-30"></div>
+                            </div>
+                            <div class="col-md-6 xs-hide">
+                                <img src="images/misc/nft.png" class="lazy img-fluid wow fadeIn" data-wow-delay="1.25s" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-intro" class="no-top no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed icon_wallet"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">Token Staking</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".25s">Discover the benefits of staking your tokens with us. Stake your preferred cryptocurrency and start earning rewards today.</p>
+                                </div>
+                                <i class="wm icon_wallet"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed icon_cloud-upload_alt"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">NFT Staking</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".25s">Maximize the potential of your NFT collection by staking them with morkie platform. Unlock additional rewards and benefits.</p>
+                                </div>
+                                <i class="wm icon_cloud-upload_alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed icon_tags_alt"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">Bridge (Coming Soon)</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".25s">Stay tuned for our upcoming Bridge feature, which will enable seamless NFT transfers between different blockchain networks.</p>
+                                </div>
+                                <i class="wm icon_tags_alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+
+            <section id="section-collections" class="no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <h2>Hot Collections</h2>
+                                <div class="small-border bg-color-2"></div>
+                            </div>
+                        </div>
+                        <div id="collection-carousel" class="owl-carousel wow fadeIn">
+
+                                <div class="nft_coll">
+                                    <div class="nft_wrap">
+                                        <a href="collection.html"><img src="images/collections/coll-1.jpg" class="lazy img-fluid" alt=""></a>
+                                    </div>
+                                    <div class="nft_coll_pp">
+                                        <a href="collection.html"><img class="lazy pp-coll" src="images/author/author-6.jpg" alt=""></a>
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="nft_coll_info">
+                                        <a href="collection.html"><h4>Morkle pass</h4></a>
+                                        <span>ERC-721</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="nft_coll">
+                                    <div class="nft_wrap">
+                                        <a href="collection.html"><img src="images/collections/coll-2.jpg" class="lazy img-fluid" alt=""></a>
+                                    </div>
+                                    <div class="nft_coll_pp">
+                                        <a href="collection.html"><img class="lazy pp-coll" src="images/author/author-2.jpg" alt=""></a>
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="nft_coll_info">
+                                        <a href="collection.html"><h4>Morkies</h4></a>
+                                        <span>ERC-721</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="nft_coll">
+                                    <div class="nft_wrap">
+                                        <a href="collection.html"><img src="images/collections/coll-3.jpg" class="lazy img-fluid" alt=""></a>
+                                    </div>
+                                    <div class="nft_coll_pp">
+                                        <a href="collection.html"><img class="lazy pp-coll" src="images/author/author-3.jpg" alt=""></a>
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="nft_coll_info">
+                                        <a href="collection.html"><h4>Zetanites</h4></a>
+                                        <span>ERC-721</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="nft_coll">
+                                    <div class="nft_wrap">
+                                        <a href="collection.html"><img src="images/collections/coll-4.jpg" class="lazy img-fluid" alt=""></a>
+                                    </div>
+                                    <div class="nft_coll_pp">
+                                        <a href="collection.html"><img class="lazy pp-coll" src="images/author/author-4.jpg" alt=""></a>
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="nft_coll_info">
+                                        <a href="collection.html"><h4>Taikgoes</h4></a>
+                                        <span>ERC-721</span>
+                                    </div>
+                                </div>
+                            
+                    
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+               
+           
+        </div>
+        <!-- content close -->
+        <a href="#" id="back-to-top"></a>
+        <!-- footer begin -->
+        <footer class="footer-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-1">
+                        <div class="widget">
+                            <h5>Morkie</h5>
+                            <ul>
+                                <li><a href="https://medium.com/@morkiexyz/about-fc75d77a45a9">About</a></li>
+                                <li><a href="#" id="openModal">Chains</a></li>
+                                <li><a href="#">Tokenomics</a></li>
+                                <li><a href="#" id="openModal2">Events</a></li>
+                                <li><a href="#">Bug Report</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Events</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Currently On Testnet (Taiko Edifel, ZetaChain)
+                            </div>
+                            <div class="modal-footer">
+                              
+                              <button type="button" class="btn btn-primary">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Events</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              No event at the moment
+                            </div>
+                            <div class="modal-footer">
+                              
+                              <button type="button" class="btn btn-primary">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                    <div class="col-md-3 col-sm-6 col-xs-1">
+                        <div class="widget">
+                            <h5>Resources</h5>
+                            <ul>
+                                <li><a href="mailto:morkiexyz@gmail.com">Contact</a></li>
+                                <li><a href="https://OpenSea.io">OpenSea</a></li>
+                                <li><a href="">Suggestions</a></li>
+                                <li><a href="https://taiko.xyz">Taiko</a></li>
+                                <li><a href="https://www.zetachain.com/">ZetaChain</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-1">
+                        <div class="widget">
+                            <h5>Community</h5>
+                            <ul>
+                                <li><a href="https://twitter.com/morkiexyz">Twitter</a></li>
+                                <li><a href="https://discord.gg/7pXMMDnk">Discord</a></li>
+                                <li><a href="https://t.me/morkiexyz">Telegram</a></li>
+                                <li><a href="#">Guild</a></li>
+                                <li><a href="https://medium.com/@morkiexyz/">Blog</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-1">
+                        <div class="widget">
+                            <h5>Newsletter</h5>
+                            <p>Signup for our newsletter to get the latest news in your inbox.</p>
+                            <form action="#" class="row form-dark" id="form_subscribe" method="post" name="form_subscribe">
+                                <div class="col text-center">
+                                    <input class="form-control" id="txt_subscribe" name="txt_subscribe" placeholder="enter your email" type="text" />
+                                    <a href="#" id="btn-subscribe"><i class="arrow_right bg-color-secondary"></i></a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                            
+                            <div class="spacer-10"></div>
+                            <small>Your email is safe with us. We don't spam.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <a href="index.html">
+                                        <img alt="" width="180" height="45" class="f-logo" src="images/logo.png" /><span class="copy">&copy; Copyright 2023 - Morkie</span>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+        
+    </div>
+    
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+
+    <!-- COOKIES NOTICE  -->
+  
+
+    <script>
+        // Add click event listener to toggle the dropdown
+document.getElementById("custom-dropdown-btn").addEventListener("click", function() {
+    var dropdown = document.getElementById("custom-dropdown-content");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+});
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener("click", function(event) {
+    var dropdown = document.getElementById("custom-dropdown-content");
+    var dropdownBtn = document.getElementById("custom-dropdown-btn");
+    if (event.target !== dropdown && event.target !== dropdownBtn) {
+        dropdown.style.display = "none";
+    }
+});
+
+// Add click event listener to "Item 1" in the dropdown
+document.getElementById("item-1").addEventListener("click", function() {
+    // Change the link of the "Explore" button
+    document.getElementById("explore-btn").href = "new-link.html"; // Replace "new-link.html" with the desired new link
+});
+// Add click event listener to "Item 1" in the dropdown
+document.getElementById("item-1").addEventListener("click", function() {
+    // Change the link of the "Explore" button
+    document.getElementById("explore-btn").href = "new-link.html"; // Replace "new-link.html" with the desired new link
+    
+    // Change the text value of "Taiko Edifel L3"
+    document.getElementById("dropdown-text").textContent = "Zetachain"; // Replace "New Text" with the desired new text
+});
+
+
+    </script>
+
+    <script>
+        const textParts = [
+    "easy",
+    "fun",
+    "exciting",
+    // Add more text parts as needed
+];
+
+let partIndex = 0;  // Index of the current text part
+let charIndex = 0;  // Index of the current character within the text part
+const typingText = document.getElementById("typing-text");
+
+function type() {
+    const currentPart = textParts[partIndex];
+
+    if (charIndex < currentPart.length) {
+        typingText.textContent += currentPart.charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 300); // Adjust the typing speed by changing the timeout value
+    } else {
+        setTimeout(erase, 180);  // Wait for a second before erasing
+    }
+}
+
+function erase() {
+    if (typingText.textContent.length > 0) {
+        typingText.textContent = typingText.textContent.slice(0, -1);
+        setTimeout(erase, 300); // Adjust the erasing speed by changing the timeout value
+    } else {
+        partIndex = (partIndex + 1) % textParts.length;  // Move to the next text part or loop back to the beginning
+        charIndex = 0;  // Reset the character index
+        setTimeout(type, 180); // Wait for a second before typing the next part
+    }
+}
+
+type();
+
+    </script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  
+    
+    <!-- Include your separate JavaScript file -->
+    <script src="js/script.js"></script>
+    <script>
+        // Function to handle the form submission
+        function submitForm() {
+          subscribeToNewsletter();
+        }
+      </script>
+
+     <script>
+        document.getElementById('openModal').addEventListener('click', function() {
+          var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+          myModal.show();
+        });
+      </script>
+       <script>
+        document.getElementById('openModal2').addEventListener('click', function() {
+          var myModal = new bootstrap.Modal(document.getElementById('exampleModal2'));
+          myModal.show();
+        });
+      </script>
+      
+
+</body>
+
+</html>
